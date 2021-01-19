@@ -1,0 +1,68 @@
+import findspark
+findspark.init("C:/spark")
+import random
+from time import time
+import numpy as np
+import pandas as pd
+from operator import add
+import configparser
+from pyspark.ml.clustering import KMeans
+from pyspark.ml.evaluation import ClusteringEvaluator
+
+1) Instanciation du client Spark Session
+
+from pyspark import SparkContext
+
+from pyspark.sql import SparkSession
+
+import pyspark.sql.functions as F
+
+from pyspark.sql.functions import *
+
+
+spark=SparkSession.builder\
+
+                .master("local[*]")\
+
+                .appName("Bristol-city-bike.json")\
+
+                .getOrCreate()
+
+2) Création du fichier properties.conf
+
+config = configparser.ConfigParser()
+
+path_to_input_data= config['Bristol-City-bike']['Input-data']
+
+path_to_output_data= config['Bristol-City-bike']['Output-data']
+
+num_partition_kmeans = config['Bristol-City-bike'][Kmeans-level]
+
+num_partition_kmeans = config.getint('Bristol-City-bike','Kmeans-level')
+
+
+3) Importation du fichier json avec spark en utilisant la variable path_to_input_data
+
+df=spark.read\
+
+    .option("header", True)\
+
+    .json("Bristol-city-bike.json")
+
+df.show()
+4) Création d'un nouveau dataframe Kmeans df contenant les variables latitude e longitude
+kmeans = KMeans().setK(2).setSeed(1)
+    model = kmeans.fit(path_to_input_data)
+    
+5) K_means
+
+from pyspark.ml.feature import VectorAssembler
+from pyspark.ml.clustering import KMeans
+features = (‘longitude’,’latitude’)
+kmeans = KMeans().setK(num-partition-kmeans).setSeed(1)
+assembler = VectorAssembler(inputCols=features,outputCol="features")
+dataset=assembler.transform(Kmeans-df)
+model = kmeans.fit(dataset)
+fitted = model.transform(dataset)
+
+6) Les colonnes de fitted
