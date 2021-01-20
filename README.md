@@ -9,16 +9,21 @@ Enfin il est demander à l'utilisateur de taper la commande suivante
 
 ```spark-submit Code_projet.py```
 
+-------------------------------------------------------------------
 ## Clusterings des vélos à Bristol City 
+<p align= "center">
+<img src="https://tse1.mm.bing.net/th?id=OIP.PW3NSsCb0Yl-y4xqArGerwHaFH&pid=Api"/>
+  </p>
 
-![img](https://tse1.mm.bing.net/th?id=OIP.PW3NSsCb0Yl-y4xqArGerwHaFH&pid=Api)
 
 ### Description des Variables
 
 La ville de bristol city est composé de 149 vélos. Il nous a été demander de trouver un moyen afin de les regroupper.
 
 L'objectif principal de ce projet est de proposer un k-means clustering de Bristol City Bike en fonction de l'emplacement des stations vélos en utilisant spark. 
-Le fichier contient des informations concernant l’emplacement de chaque vélo. La base de donnée est fournis est disponible dans le fichier input ([Cliquer ici]("/input/Bristol-city-bike.json"))
+Le fichier contient des informations concernant l’emplacement de chaque vélo. La base de donnée est fournis est disponible dans le fichier input ([Cliquer ici](data/Bristol-city-bike.json))
+
+
 -----------------------------------------------------------------------
 Les 3 prmières valeurs sont donnée par le tableaux suivant
 
@@ -46,6 +51,8 @@ Il a été demander de créer 3 groupes distincts. Ainsi nous avons trouvé les 
 - un second groupe étant au centre de la ville
 - une dernier groupe à l'ouest de ville. 
 
+un fichier excel, recapitulatn l'intégralité des resultats k-meanes est présent en cliquant sur le lien [ici](exported/fitted.csv)
+
 Les longitudes et latitudes moyens de chaque groupe est données par le tableaux ci-dessous.
 
 |   Longitude moyen|      Latitude Moyen|Groupe      |
@@ -56,7 +63,11 @@ Les longitudes et latitudes moyens de chaque groupe est données par le tableaux
 
 Afin d'avoir un aperçu, nous avons cartographier les vélos selon leurs appartenances à leurs groupes
 
-[Carte](/exported/carte_bristol.html)
+![image](https://user-images.githubusercontent.com/71498491/105109160-3be2c180-5abc-11eb-81e0-f1a24f80522d.png)
 
+La photo ci-dessous est assez representatif des 3 groupes, nous pouvons ainsi clairement les distinguées. un groupes est plus axés à l'est, un second à l'ouest et enfin un dernier au centre.
+
+
+La version dynamique de la carte est disponible en <a href="https://ghcdn.rawgit.org/Koffi26/Projet-K_Means/draft/exported/carte_bristol.html" target="_blank">cliquant ici</a>
 
 

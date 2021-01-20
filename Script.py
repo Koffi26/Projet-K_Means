@@ -110,6 +110,7 @@ for latitude, longitude, name, prediction in zip(df['latitude'], df['longitude']
 
 map_bike.save(path_to_output_data + "carte_bristol.html")
 
-spark.stop()
+fitted.drop("features")\
+      .toPandas().to_csv(path_to_output_data+"fitted.csv")
 
-df.count()
+spark.stop()
