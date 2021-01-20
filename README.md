@@ -25,7 +25,7 @@ Le fichier contient des informations concernant l’emplacement de chaque vélo.
 
 
 -----------------------------------------------------------------------
-Les 3 prmières valeurs sont donnée par le tableaux suivant
+Les 3 premières valeurs sont donnée par le tableaux suivant :
 
 |             address|  latitude| longitude|                name|number|
 |:-------------------|:---------|:---------|:-------------------|:----:|
@@ -53,7 +53,7 @@ Il a été demandé de créer 3 groupes distincts. Ainsi nous avons trouvé les 
 
 un fichier excel, recapitulatif de l'intégralité des resultats k-means est présent en cliquant sur le lien [ici](exported/fitted.csv)
 
-Les longitudes et latitudes moyens de chaque groupe sont données par le tableaux ci-dessous.
+Les longitudes et latitudes moyennes de chaque groupe sont données par le tableaux ci-dessous.
 
 |   Longitude moyen|      Latitude Moyen|Groupe      |
 |:-----------------|:------------------ |:---------: |
@@ -65,7 +65,7 @@ Afin d'avoir un aperçu, nous avons cartographié les vélos selon leurs apparte
 
 ![image](https://user-images.githubusercontent.com/71498491/105109160-3be2c180-5abc-11eb-81e0-f1a24f80522d.png)
 
-La photo ci-dessous est assez representatif des 3 groupes, nous pouvons ainsi clairement les distinguer. un groupes est plus axé à l'est, un second à l'ouest et enfin un dernier au centre.
+La photo ci-dessous est assez representatif des 3 groupes, nous pouvons ainsi clairement les distinguer. un groupe est plus axé à l'est, un second à l'ouest et enfin un dernier au centre.
 
 
 La version dynamique de la carte est disponible en <a href="https://ghcdn.rawgit.org/Koffi26/Projet-K_Means/draft/exported/carte_bristol.html" target="_blank">cliquant ici</a>
