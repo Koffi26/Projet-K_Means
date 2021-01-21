@@ -14,6 +14,7 @@ import configparser
 from pyspark.sql.functions import col
 import folium
 import pandas as pd
+import webbrowser
 
 # 1- Instancier Client Spark
 spark = SparkSession.builder \
@@ -108,7 +109,9 @@ for latitude, longitude, name, prediction in zip(df['latitude'], df['longitude']
                   icon=folium.Icon(color=color(prediction),
                                    icon_color='yellow', icon='bicycle', prefix='fa')).add_to(map_bike)
 
-map_bike.save(path_to_output_data + "carte_bristol.html")
+map_show=path_to_output_data+"map_bike.html"
+
+webbrowser.open("https://ghcdn.rawgit.org/Koffi26/Projet-K_Means/draft/exported/carte_bristol.html")
 
 fitted.drop("features")\
       .toPandas().to_csv(path_to_output_data+"fitted.csv")
