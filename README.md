@@ -65,7 +65,7 @@ Les longitudes et latitudes moyennes de chaque groupe sont données par le table
 
 |   Longitude moyen|      Latitude Moyen|Groupe      |
 |:-----------------|:------------------ |:---------: |
-|153.04186302272726|-27.46024+0636363633|     Est    |
+|153.04186302272726|-27.460240636363633|     Est    |
 |   153.02594553125| -27.47255990624999 |      Centre|
 |153.00572882926832|-27.481218536585374 |      Ouest |
 
