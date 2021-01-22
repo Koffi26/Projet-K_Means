@@ -1,7 +1,7 @@
 
 # K-means Bristol City's Bikes 
 
-##Lance Spark 
+## Lancer Spark 
 
 le Lancement du programme nécessite un invité de Commande. (.cmd ou .rc). 
 Une fois dans l'invite de commande, il est demandé à l'utulisateur de se rendre dans le dossier où se trouve les dossiers
