@@ -8,7 +8,7 @@ Une fois dans l'invite de commande, il est demandé à l'utulisateur de se rendr
 
 Enfin il est demandé à l'utilisateur de taper la commande suivante 
 
-```spark-submit Code_projet.py```
+```spark-submit Script.py```
 
 -------------------------------------------------------------------
 ## Clusterings des vélos à Bristol City 
