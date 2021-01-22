@@ -28,7 +28,7 @@ Enfin il est demandé à l'utilisateur de taper la commande suivante
 La ville de Brisbane City est composée de 149 vélos. Il nous a été demandé de trouver un moyen afin de les regrouper par classe.
 
 L'objectif principal de ce projet est de proposer un k-means clustering de Brisbane City Bike en fonction de l'emplacement des stations vélos en utilisant spark. 
-Le fichier contient des informations concernant l’emplacement de chaque vélo. La base de donnée fournie est disponible dans le fichier input ([Cliquer ici](data/Brisbane-city-bike.json))
+Le fichier contient des informations concernant l’emplacement de chaque vélo. La base de donnée fournie est disponible dans le fichier input ([Cliquer ici](data/Bristol-city-bike.json))
 
 
 -----------------------------------------------------------------------
